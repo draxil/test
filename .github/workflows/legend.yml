@@ -2,11 +2,10 @@ name: Update
 
 on:
   push:
-    branches: [ "x" ]
-  pull_request:
-    branches: [ "x" ]
-
-jobs:
+    branches:
+      - x
+    pull_request_target:
+      types: [opened, synchronize, reopened]
 
   build:
     runs-on: ubuntu-latest
