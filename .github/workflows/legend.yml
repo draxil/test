@@ -8,8 +8,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-
-  build:
+  legend:
     runs-on: ubuntu-latest
     steps:
     - name: You are a
