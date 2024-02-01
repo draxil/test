@@ -2,9 +2,10 @@ name: Update
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches:
+      - x
+  pull_request_target:
+    types: [opened, synchronize, reopened]
 
 jobs:
 
